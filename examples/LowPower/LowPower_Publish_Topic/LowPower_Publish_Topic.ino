@@ -13,7 +13,7 @@
  *@get from https://www.dfrobot.com.cn
 */
 
-#include "DFRobot_BC20.h"
+#include "DFRobot_BC20_Gravity.h"
 #define  RED 0
 #define  BLUE 1
 #define  GREEN 2

@@ -1,4 +1,4 @@
-#include "DFRobot_BC20.h"
+#include "DFRobot_BC20_Gravity.h"
 #include "DFRobot_queue.h"
 #include "hardwareSerial.h"
 

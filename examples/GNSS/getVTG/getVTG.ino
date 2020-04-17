@@ -11,7 +11,7 @@
  *@get from https://www.dfrobot.com
  *@get from https://www.dfrobot.com.cn
 */
-#include "DFRobot_BC20.h"
+#include "DFRobot_BC20_Gravity.h"
 
 /* 7 colors are available */
 #define  RED 0
