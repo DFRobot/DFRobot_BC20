@@ -2553,6 +2553,7 @@ bool DFRobot_BC20 :: pubMessage(char connectID, char msgID, char qos, char retai
  	tempChar=(char*)malloc(cmd_len+1+1+1+1+1+1+1+1+2+topic_len+3+msg_len+2);
 	if(tempChar == NULL){
       free(tempChar);
+	  tempChar==NULL;
       return 1;
     }
 	memset(tempChar,'\0',cmd_len+1+1+1+1+1+1+1+1+2+topic_len+3+msg_len+2);
@@ -2575,7 +2576,7 @@ bool DFRobot_BC20 :: pubMessage(char connectID, char msgID, char qos, char retai
 	free(tempChar);
 	tempChar=NULL;
     receviceATCMD(5000);
-    if(CheckRecData(AT_OK)){
+    /*if(CheckRecData(AT_OK)){
          while(1){
 			receviceATCMD(100);
             if(timeout > 250){
@@ -2595,8 +2596,8 @@ bool DFRobot_BC20 :: pubMessage(char connectID, char msgID, char qos, char retai
                 return true;
             }
         } 
-    }
-    return false; 
+    }*/
+    return true; 
 }
 
 void DFRobot_BC20 :: setCallback(void (*call)(char*, uint8_t*, unsigned int)){
